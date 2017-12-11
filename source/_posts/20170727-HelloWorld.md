@@ -5,7 +5,7 @@ category:
 	- 生活
 toc: true
 ---
-![Hello World！](http://pic1.win4000.com/wallpaper/f/578842781a265.jpg "文艺")
+![Hello World！](https://github.com/Mirbosk13s/ImageLibrary/blob/master/blog/p002.jpg?raw=true "文艺")
 
 ## [♠](#1) <span id='1'>前言</span>
 
