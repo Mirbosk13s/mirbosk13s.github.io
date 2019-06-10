@@ -16,9 +16,13 @@
     "hexo-generator-json-content": "^3.0.1",
     "hexo-generator-search": "^2.1.1",
     "hexo-generator-tag": "^0.2.0",
+    "hexo-log": "^0.2.0",
     "hexo-renderer-ejs": "^0.3.0",
     "hexo-renderer-marked": "^0.3.0",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.2"
+    "hexo-server": "^0.2.2",
+    "needle": "^2.4.0",
+    "node-gyp": "^4.0.0",
+    "node-pre-gyp": "^0.13.0"
   }
 }
