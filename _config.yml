@@ -84,6 +84,6 @@ theme: hueman
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-    type: TortoiseGit
+    type: git
     repository: https://github.com/Mirbosk13s/mirbosk13s.github.io.git
     branch: master
