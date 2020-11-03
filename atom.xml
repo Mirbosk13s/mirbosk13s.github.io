@@ -4,9 +4,9 @@
   <subtitle>鹰如流星，唯以墨铭！</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.mrbosk.com/"/>
-  <updated>2020-06-17T09:20:00.376Z</updated>
-  <id>http://www.mrbosk.com/</id>
+  <link href="https://blog.mrbosk.com/"/>
+  <updated>2020-11-03T11:01:28.321Z</updated>
+  <id>https://blog.mrbosk.com/</id>
   
   <author>
     <name>幽蛰</name>
@@ -16,9 +16,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>小程序-wepy下某些文件非严格模式处理</title>
+    <link href="https://blog.mrbosk.com/2020/11/03/20201103a/"/>
+    <id>https://blog.mrbosk.com/2020/11/03/20201103a/</id>
+    <published>2020-11-03T11:01:28.320Z</published>
+    <updated>2020-11-03T11:01:28.321Z</updated>
+    
+    <content type="html"><![CDATA[<center><br><img src="data:image/webp;base64,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" alt="js(内容来自网络如有侵权请联系删除)"><br></center>
+
+<h2 id="♠-作用及原理"><a href="#♠-作用及原理" class="headerlink" title="♠ 作用及原理"></a><a href="#1">♠</a> <span id="1">作用及原理</span></h2><p>作用: wepy编译代码时，不对某些文件自动增加严格模式<code>&quot;use strict&quot;</code></p>
+<p>原理: 查找wepy源码，找到wepy的编译文件babel文件的位置，根据自己做的标记，删除<code>&quot;use strict&quot;</code>14个字符即可</p>
+<h2 id="♠-wepy1下处理方式"><a href="#♠-wepy1下处理方式" class="headerlink" title="♠ wepy1下处理方式"></a><a href="#2">♠</a> <span id="2">wepy1下处理方式</span></h2><p>1、文件顶部增加<code>// no use strict</code>代码。(为后面做标记)</p>
+<p>2、找到文件<code>node_modules/wepy-cli/lib/compile-script.js</code>。</p>
+<p>3、在文件的第249行增加代码<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">let content = code;</div></pre></td></tr></table></figure></p>
+<p>  第257行增加代码<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">if (content.startsWith(&apos;// no use strict&apos;)) &#123;</div><div class="line">  code = code.slice(14)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h2 id="♠-wepy2下处理方式"><a href="#♠-wepy2下处理方式" class="headerlink" title="♠ wepy2下处理方式"></a><a href="#3">♠</a> <span id="3">wepy2下处理方式</span></h2><p>1、文件顶部增加<code>// no use script</code>代码。(为后面做标记)</p>
+<p>2、找到文件<code>node_modules/@wepy/compiler-babel/index.js</code>。</p>
+<p>3、在文件的第23行增加代码<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">if (node.content.startsWith(&apos;// no use script&apos;)) &#123;</div><div class="line">  compiled.code = compiled.code.slice(14)</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<hr>
+<p>（幽蛰 写于 2020.11.03）</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;center&gt;&lt;br&gt;&lt;img src=&quot;data:image/webp;base64,UklGRiYVAABXRUJQVlA4IBoVAABwagCdASpsAiwBPpFIoUylpKMiIZy4ULASCWVu4XdhGpu6m3nfyu9k/lXuf9xfWNraOL3
+    
+    </summary>
+    
+      <category term="小程序" scheme="https://blog.mrbosk.com/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+    
+      <category term="wepy" scheme="https://blog.mrbosk.com/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/wepy/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>pip某些软件包安装异常及处理</title>
-    <link href="http://www.mrbosk.com/2020/06/17/20200617a/"/>
-    <id>http://www.mrbosk.com/2020/06/17/20200617a/</id>
+    <link href="https://blog.mrbosk.com/2020/06/17/20200617a/"/>
+    <id>https://blog.mrbosk.com/2020/06/17/20200617a/</id>
     <published>2020-06-17T08:29:31.242Z</published>
     <updated>2020-06-17T09:20:00.376Z</updated>
     
@@ -44,15 +79,15 @@
     
     </summary>
     
-      <category term="python" scheme="http://www.mrbosk.com/categories/python/"/>
+      <category term="python" scheme="https://blog.mrbosk.com/categories/python/"/>
     
     
   </entry>
   
   <entry>
     <title>小程序-图片/文件本地缓存，减少CDN流量消耗</title>
-    <link href="http://www.mrbosk.com/2020/06/10/20200610a/"/>
-    <id>http://www.mrbosk.com/2020/06/10/20200610a/</id>
+    <link href="https://blog.mrbosk.com/2020/06/10/20200610a/"/>
+    <id>https://blog.mrbosk.com/2020/06/10/20200610a/</id>
     <published>2020-06-10T11:11:45.202Z</published>
     <updated>2020-06-17T09:16:44.995Z</updated>
     
@@ -104,15 +139,15 @@
     
     </summary>
     
-      <category term="小程序" scheme="http://www.mrbosk.com/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+      <category term="小程序" scheme="https://blog.mrbosk.com/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
     
   </entry>
   
   <entry>
     <title>vim快速使用</title>
-    <link href="http://www.mrbosk.com/2019/07/02/201907021659/"/>
-    <id>http://www.mrbosk.com/2019/07/02/201907021659/</id>
+    <link href="https://blog.mrbosk.com/2019/07/02/201907021659/"/>
+    <id>https://blog.mrbosk.com/2019/07/02/201907021659/</id>
     <published>2019-07-02T08:59:05.000Z</published>
     <updated>2020-06-17T09:19:53.067Z</updated>
     
@@ -190,17 +225,17 @@
     
     </summary>
     
-      <category term="vim" scheme="http://www.mrbosk.com/categories/vim/"/>
+      <category term="vim" scheme="https://blog.mrbosk.com/categories/vim/"/>
     
     
-      <category term="vim" scheme="http://www.mrbosk.com/tags/vim/"/>
+      <category term="vim" scheme="https://blog.mrbosk.com/tags/vim/"/>
     
   </entry>
   
   <entry>
     <title>小程序-富文本展示的几种方式</title>
-    <link href="http://www.mrbosk.com/2019/06/10/201906101034/"/>
-    <id>http://www.mrbosk.com/2019/06/10/201906101034/</id>
+    <link href="https://blog.mrbosk.com/2019/06/10/201906101034/"/>
+    <id>https://blog.mrbosk.com/2019/06/10/201906101034/</id>
     <published>2019-06-10T02:34:01.000Z</published>
     <updated>2019-07-02T09:42:08.000Z</updated>
     
@@ -277,21 +312,21 @@ GitHub: https://github.com/sbfkcel/towxml。
     
     </summary>
     
-      <category term="小程序" scheme="http://www.mrbosk.com/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+      <category term="小程序" scheme="https://blog.mrbosk.com/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
-      <category term="富文本" scheme="http://www.mrbosk.com/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%AF%8C%E6%96%87%E6%9C%AC/"/>
+      <category term="富文本" scheme="https://blog.mrbosk.com/categories/%E5%B0%8F%E7%A8%8B%E5%BA%8F/%E5%AF%8C%E6%96%87%E6%9C%AC/"/>
     
     
-      <category term="小程序" scheme="http://www.mrbosk.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
+      <category term="小程序" scheme="https://blog.mrbosk.com/tags/%E5%B0%8F%E7%A8%8B%E5%BA%8F/"/>
     
-      <category term="富文本" scheme="http://www.mrbosk.com/tags/%E5%AF%8C%E6%96%87%E6%9C%AC/"/>
+      <category term="富文本" scheme="https://blog.mrbosk.com/tags/%E5%AF%8C%E6%96%87%E6%9C%AC/"/>
     
   </entry>
   
   <entry>
     <title>系统表dbo.syscolumns</title>
-    <link href="http://www.mrbosk.com/2018/02/05/2018020502/"/>
-    <id>http://www.mrbosk.com/2018/02/05/2018020502/</id>
+    <link href="https://blog.mrbosk.com/2018/02/05/2018020502/"/>
+    <id>https://blog.mrbosk.com/2018/02/05/2018020502/</id>
     <published>2018-02-04T18:34:01.000Z</published>
     <updated>2019-07-02T09:42:39.000Z</updated>
     
@@ -570,17 +605,17 @@ GitHub: https://github.com/sbfkcel/towxml。
     
     </summary>
     
-      <category term="SQL" scheme="http://www.mrbosk.com/categories/SQL/"/>
+      <category term="SQL" scheme="https://blog.mrbosk.com/categories/SQL/"/>
     
-      <category term="SQL Server" scheme="http://www.mrbosk.com/categories/SQL/SQL-Server/"/>
+      <category term="SQL Server" scheme="https://blog.mrbosk.com/categories/SQL/SQL-Server/"/>
     
     
   </entry>
   
   <entry>
     <title>系统表dbo.sysobjects</title>
-    <link href="http://www.mrbosk.com/2018/02/05/2018020501/"/>
-    <id>http://www.mrbosk.com/2018/02/05/2018020501/</id>
+    <link href="https://blog.mrbosk.com/2018/02/05/2018020501/"/>
+    <id>https://blog.mrbosk.com/2018/02/05/2018020501/</id>
     <published>2018-02-04T17:34:01.000Z</published>
     <updated>2019-07-02T09:42:54.000Z</updated>
     
@@ -783,17 +818,17 @@ GitHub: https://github.com/sbfkcel/towxml。
     
     </summary>
     
-      <category term="SQL" scheme="http://www.mrbosk.com/categories/SQL/"/>
+      <category term="SQL" scheme="https://blog.mrbosk.com/categories/SQL/"/>
     
-      <category term="SQL Server" scheme="http://www.mrbosk.com/categories/SQL/SQL-Server/"/>
+      <category term="SQL Server" scheme="https://blog.mrbosk.com/categories/SQL/SQL-Server/"/>
     
     
   </entry>
   
   <entry>
     <title>SET NOCOUNT 作用</title>
-    <link href="http://www.mrbosk.com/2018/01/31/2018013102/"/>
-    <id>http://www.mrbosk.com/2018/01/31/2018013102/</id>
+    <link href="https://blog.mrbosk.com/2018/01/31/2018013102/"/>
+    <id>https://blog.mrbosk.com/2018/01/31/2018013102/</id>
     <published>2018-01-30T18:34:01.000Z</published>
     <updated>2019-07-02T09:43:11.000Z</updated>
     
@@ -822,17 +857,17 @@ GitHub: https://github.com/sbfkcel/towxml。
     
     </summary>
     
-      <category term="SQL" scheme="http://www.mrbosk.com/categories/SQL/"/>
+      <category term="SQL" scheme="https://blog.mrbosk.com/categories/SQL/"/>
     
-      <category term="SQL Server" scheme="http://www.mrbosk.com/categories/SQL/SQL-Server/"/>
+      <category term="SQL Server" scheme="https://blog.mrbosk.com/categories/SQL/SQL-Server/"/>
     
     
   </entry>
   
   <entry>
     <title>Json.NET(Newtonsoft.Json.dll) - 1.介绍和简单使用</title>
-    <link href="http://www.mrbosk.com/2018/01/31/2018011001/"/>
-    <id>http://www.mrbosk.com/2018/01/31/2018011001/</id>
+    <link href="https://blog.mrbosk.com/2018/01/31/2018011001/"/>
+    <id>https://blog.mrbosk.com/2018/01/31/2018011001/</id>
     <published>2018-01-30T17:34:01.000Z</published>
     <updated>2019-07-02T09:43:47.000Z</updated>
     
@@ -863,19 +898,19 @@ GitHub: https://github.com/sbfkcel/towxml。
     
     </summary>
     
-      <category term="C#" scheme="http://www.mrbosk.com/categories/C/"/>
+      <category term="C#" scheme="https://blog.mrbosk.com/categories/C/"/>
     
     
-      <category term="Json" scheme="http://www.mrbosk.com/tags/Json/"/>
+      <category term="Json" scheme="https://blog.mrbosk.com/tags/Json/"/>
     
-      <category term="C#" scheme="http://www.mrbosk.com/tags/C/"/>
+      <category term="C#" scheme="https://blog.mrbosk.com/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>企业微信(1) - API概况</title>
-    <link href="http://www.mrbosk.com/2018/01/31/2018013101/"/>
-    <id>http://www.mrbosk.com/2018/01/31/2018013101/</id>
+    <link href="https://blog.mrbosk.com/2018/01/31/2018013101/"/>
+    <id>https://blog.mrbosk.com/2018/01/31/2018013101/</id>
     <published>2018-01-30T17:34:01.000Z</published>
     <updated>2019-07-02T09:43:24.000Z</updated>
     
@@ -982,17 +1017,17 @@ GitHub: https://github.com/sbfkcel/towxml。
     
     </summary>
     
-      <category term="软件" scheme="http://www.mrbosk.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="https://blog.mrbosk.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
-      <category term="企业微信" scheme="http://www.mrbosk.com/tags/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1/"/>
+      <category term="企业微信" scheme="https://blog.mrbosk.com/tags/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1/"/>
     
   </entry>
   
   <entry>
     <title>Json.NET(Newtonsoft.Json.dll) - 2.序列化时，key为小驼峰式</title>
-    <link href="http://www.mrbosk.com/2018/01/10/2018011002/"/>
-    <id>http://www.mrbosk.com/2018/01/10/2018011002/</id>
+    <link href="https://blog.mrbosk.com/2018/01/10/2018011002/"/>
+    <id>https://blog.mrbosk.com/2018/01/10/2018011002/</id>
     <published>2018-01-09T18:34:01.000Z</published>
     <updated>2019-07-02T09:43:37.000Z</updated>
     
@@ -1018,19 +1053,19 @@ GitHub: https://github.com/sbfkcel/towxml。
     
     </summary>
     
-      <category term="C#" scheme="http://www.mrbosk.com/categories/C/"/>
+      <category term="C#" scheme="https://blog.mrbosk.com/categories/C/"/>
     
     
-      <category term="Json" scheme="http://www.mrbosk.com/tags/Json/"/>
+      <category term="Json" scheme="https://blog.mrbosk.com/tags/Json/"/>
     
-      <category term="C#" scheme="http://www.mrbosk.com/tags/C/"/>
+      <category term="C#" scheme="https://blog.mrbosk.com/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>Sql查询(1) -- 空格引发的无法查询问题</title>
-    <link href="http://www.mrbosk.com/2017/12/11/2017121101/"/>
-    <id>http://www.mrbosk.com/2017/12/11/2017121101/</id>
+    <link href="https://blog.mrbosk.com/2017/12/11/2017121101/"/>
+    <id>https://blog.mrbosk.com/2017/12/11/2017121101/</id>
     <published>2017-12-10T17:34:01.000Z</published>
     <updated>2019-07-02T09:44:07.000Z</updated>
     
@@ -1047,15 +1082,15 @@ GitHub: https://github.com/sbfkcel/towxml。
     
     </summary>
     
-      <category term="SQL" scheme="http://www.mrbosk.com/categories/SQL/"/>
+      <category term="SQL" scheme="https://blog.mrbosk.com/categories/SQL/"/>
     
     
   </entry>
   
   <entry>
     <title>快捷键</title>
-    <link href="http://www.mrbosk.com/2017/11/22/2017112201/"/>
-    <id>http://www.mrbosk.com/2017/11/22/2017112201/</id>
+    <link href="https://blog.mrbosk.com/2017/11/22/2017112201/"/>
+    <id>https://blog.mrbosk.com/2017/11/22/2017112201/</id>
     <published>2017-11-21T18:34:01.000Z</published>
     <updated>2019-07-02T09:44:23.000Z</updated>
     
@@ -1166,15 +1201,15 @@ GitHub: https://github.com/sbfkcel/towxml。
     
     </summary>
     
-      <category term="软件" scheme="http://www.mrbosk.com/categories/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="https://blog.mrbosk.com/categories/%E8%BD%AF%E4%BB%B6/"/>
     
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://www.mrbosk.com/2017/07/27/2017072701/"/>
-    <id>http://www.mrbosk.com/2017/07/27/2017072701/</id>
+    <link href="https://blog.mrbosk.com/2017/07/27/2017072701/"/>
+    <id>https://blog.mrbosk.com/2017/07/27/2017072701/</id>
     <published>2017-07-26T18:34:01.000Z</published>
     <updated>2019-07-02T09:44:38.000Z</updated>
     
@@ -1215,7 +1250,7 @@ GitHub: https://github.com/sbfkcel/towxml。
     
     </summary>
     
-      <category term="生活" scheme="http://www.mrbosk.com/categories/life/"/>
+      <category term="生活" scheme="https://blog.mrbosk.com/categories/life/"/>
     
     
   </entry>
